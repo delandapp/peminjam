@@ -20,12 +20,12 @@ class LoginView extends GetView<LoginController> {
 
           children: [
             Container(
-              padding: EdgeInsets.symmetric(horizontal: 20),
+              padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
               width: double.infinity,
               child: Text("Username", textAlign: TextAlign.left, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
+              padding: const EdgeInsets.only(left: 15,right: 15,bottom: 15),
               child: TextFormField(
                 controller: controller.usernameController,
                 decoration: InputDecoration(hintText: 'Masukan username',  border: OutlineInputBorder()),
@@ -38,12 +38,12 @@ class LoginView extends GetView<LoginController> {
               ),
             ),
             Container(
-              padding: EdgeInsets.symmetric(horizontal: 20),
+              padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
               width: double.infinity,
               child: Text("Password", textAlign: TextAlign.left, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
+              padding: const EdgeInsets.only(left: 15,right: 15,bottom: 15),
               child: TextFormField(
                 controller: controller.passwordController,
                 decoration: InputDecoration(hintText: 'Masukan password', border: OutlineInputBorder()),

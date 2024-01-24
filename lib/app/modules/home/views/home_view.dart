@@ -28,8 +28,10 @@ class HomeView extends GetView<HomeController> {
                   width: 170,
                   child: ElevatedButton(
                     onPressed: (){Get.toNamed(Routes.BOOK);}, child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Image.asset("assets/"),
+                    Icon(Icons.book, size: 50),
                     Text("Buku", textAlign: TextAlign.left, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15))
                     ],
                   ),
@@ -42,7 +44,14 @@ class HomeView extends GetView<HomeController> {
                   height: 100,
                   width: 170,
                   child: ElevatedButton(
-                    onPressed: (){Get.toNamed(Routes.PEMINJAMAN);}, child: Text("Peminjaman", textAlign: TextAlign.left, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15)),
+                    onPressed: (){Get.toNamed(Routes.PEMINJAMAN);}, child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                    Icon(Icons.person, size: 50),
+                    Text("Peminjaman", textAlign: TextAlign.left, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15))
+                    ],
+                  ),
                 ),
                 ),
               ],
